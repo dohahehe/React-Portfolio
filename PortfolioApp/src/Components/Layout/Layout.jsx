@@ -8,9 +8,19 @@ function Layout() {
 
   useEffect(() => {
     const seg = location.pathname === '/' ? '' : location.pathname.split('/')[1] || '';    
-    const pageName = seg ? seg.charAt(0).toUpperCase() + seg.slice(1) : 'Home';
+    let pageName = seg ? seg.charAt(0).toUpperCase() + seg.slice(1) : 'Home';
+    
+    const validPages = ['Home', 'About', 'Portfolio', 'Contact'];
+    
+    if (!validPages.includes(pageName)) {
+      pageName = '404';
+    }
+    
     document.title = pageName;
+
   }, [location.pathname]);
+
+
 
   return (
     <>
