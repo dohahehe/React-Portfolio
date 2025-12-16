@@ -12,6 +12,10 @@ ul{
   padding: 0;
   margin: 0;
 }
+.error{
+  min-height: 85vh;
+  padding-top: 20px;
+}
 
 /*Reusable Styles*/
 
