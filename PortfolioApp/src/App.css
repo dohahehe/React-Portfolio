@@ -288,9 +288,14 @@ footer{
   justify-content: center;
   min-height: 100vh;
 }
+.contact .container{
+   padding-left: 0 !important;
+  padding-right: 0 !important;
+}
 .contact form{
   margin-top: 50px;
   padding-top: 35px;
+  width: 100%;
 }
 .contact form .input-group{
   margin-bottom: 30px;
@@ -306,11 +311,12 @@ footer{
   border-radius: 7px;
   display: inline;
   padding: 15px 10px ;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   box-shadow: none;
-  width: 90%;
+  width: 100%;
   z-index: 100;
   margin-bottom: 5px;
+  box-sizing: border-box !important;
 }
 .contact form .input-bottom-border:focus{
   outline: none;
@@ -322,7 +328,7 @@ footer{
   transform: translateY(-50%);
   color: #888;
   font-size: 16px;
-  transition: 0.3s;
+  transition: all 0.7s;
   pointer-events: none;
   opacity: 0;
 }
@@ -345,6 +351,10 @@ footer{
   cursor: pointer;
   transition: all 0.3s ease;
 }
+.contact form button:hover{
+  background-color: #5CBD9D;
+  color: white;
+}
 
 /*Media Queries*/
 
@@ -363,9 +373,8 @@ footer{
     width: 100% !important;
   }
   .contact form .input-group .input-bottom-border{
-    width: 100%;
+    width: 100% !important;
     z-index: 100;
-    margin-left: 15px;
     margin-bottom: 5px;
   }
   .portfolio .modal-content{

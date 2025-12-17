@@ -28,22 +28,30 @@ function Contact() {
         </div>
         <div className="form-row row d-flex justify-content-center align-items-center px-5 m-auto">
           <div className="col-md-8 col-12 p-0">
-            <form onSubmit={handleSubmit}>
+            <form className='px-3' onSubmit={handleSubmit}>
               <div className="input-group">
-                <input type="text" className='form-control input-bottom-border' id="name" placeholder='userName' required />
-                <label htmlFor="name">userName :</label>
+                <div className="w-100">
+                  <input type="text" className='form-control input-bottom-border' id="name" placeholder='userName' required />
+                  <label htmlFor="name">userName :</label>
+                </div>   
               </div>
               <div className="input-group">
-                <input type="text" className='form-control input-bottom-border' id="age" placeholder='userAge' required />
-                <label htmlFor="name">userAge :</label>
+                <div className="w-100">
+                  <input type="text" className='form-control input-bottom-border' id="age" placeholder='userAge' required />
+                  <label htmlFor="name">userAge :</label>
+                </div>
               </div>
               <div className="input-group">
-                <input type="email" className='form-control input-bottom-border' id="email" placeholder='userEmail' required />
-                <label htmlFor="name">userEmail :</label>
+                <div className="w-100">
+                  <input type="email" className='form-control input-bottom-border' id="email" placeholder='userEmail' required />
+                  <label htmlFor="name">userEmail :</label>
+                </div>
               </div>
               <div className="input-group">
-                <input type="text" className='form-control input-bottom-border' id="password" placeholder='userPassword' required />
-                <label htmlFor="name">userPassword :</label>
+                <div className="w-100">
+                  <input type="text" className='form-control input-bottom-border' id="password" placeholder='userPassword' required />
+                  <label htmlFor="name">userPassword :</label>
+                </div>
               </div>
               <button type="submit" className="btn">send Message</button>
             </form>
